@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- displays site properly based on user's device -->
+
     <link
       rel="icon"
       type="image/png"
@@ -11,26 +11,32 @@
       href="./images/favicon-32x32.png"
     />
     <link rel="stylesheet" href="style.css" />
-    <title>Frontend Mentor | E-commerce product page</title>
+    <title>Sneakers</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
   </head>
   <body>
     <div class="container">
       <header>
         <nav>
           <div class="nav1">
-            <h1>Sneakers</h1>
+            <h1>sneakers</h1>
             <ul>
               <li><a href="">Collections</a></li>
               <li><a href="">Men</a></li>
               <li><a href="">Women</a></li>
               <li><a href="">About</a></li>
               <li><a href="">Contact</a></li>
+            
             </ul>
           </div>
           <div class="nav2">
             <a href=""><img src="./images/icon-cart.svg" alt="" /></a>
             <a href=""
-              ><img style="height: 3rem" src="./images/image-avatar.png" alt=""
+              ><img
+                class="user"
+                style="height: 2.8rem"
+                src="./images/image-avatar.png"
+                alt=""
             /></a>
           </div>
         </nav>
@@ -58,22 +64,23 @@
         </section>
         <section class="sec2">
           <h4>Sneaker Company</h4>
-          <h1>Fall Limited <br> Sneakers</h1>
+          <h1>Fall Limited Sneakers</h1>
           <p class="par">
             These low-profile sneakers are your perfect casual wear companion.
             Featuring a durable rubber outer sole, they’ll withstand everything
             the weather can offer.
           </p>
-          <h4>$125.00 <span>50%</span></h4>
-          <p>$250.00</p>
+          <h4 class="money">$125.00 <span>50%</span></h4>
+          <p><del> $250.00</del></p>
           <div class="pay">
-            <label for=" ">
+            <div class="leftside">
               <img src="./images/icon-minus.svg" alt="" />
               <span>3</span>
               <img src="./images/icon-plus.svg" alt="" />
-            </label>
+            </div>
             <button>
-              <img src="./images/icon-cart.svg" alt="" /> Add to cart
+               <i class="fa-solid fa-cart-shopping"></i> Add to
+              cart
             </button>
           </div>
         </section>
