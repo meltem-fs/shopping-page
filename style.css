@@ -38,6 +38,9 @@
   width: 100%;
   justify-content: space-around;
 }
+.close {
+  display: none;
+}
 
 .nav1 li a {
   text-decoration: none;
@@ -54,6 +57,9 @@
 .nav1 li {
   list-style-type: none;
   margin-left: 2rem;
+}
+.hamb {
+  display: none;
 }
 
 .nav2 {
@@ -166,9 +172,6 @@ main {
   border-radius: 5px;
 }
 
-.leftside span {
-  /* margin: 0 2rem; */
-}
 .leftside img {
   /* border: 1px solid red; */
   width: 1rem;
@@ -210,5 +213,55 @@ main {
 @media screen and (max-width: 600px) {
   .sec2 {
     width: 40rem;
+  }
+  .container {
+    position: relative;
+  }
+  .container nav {
+    padding: 0 0;
+  }
+  .nav1 {
+    flex-direction: column;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    padding: 0.5rem 0;
+    /* position: relative; */
+  }
+  .nav1 .hamb {
+    display: inline;
+    margin-right: 1rem;
+    cursor: pointer;
+  }
+  .nav1 ul {
+    /* visibility: hidden; */
+    /* flex-direction: column; */
+    width: 30vw;
+    background-color: antiquewhite;
+    height: 45vh;
+    position: absolute;
+    left: -14rem;
+    top: 0.1rem;
+  }
+  .nav1 ul li a {
+    padding: 0 0;
+  }
+  .hamb:hover ~ .ul {
+    background-color: rgb(252, 243, 229);
+    position: absolute;
+    left: -2.5rem;
+    top: 0.1rem;
+
+    transition: all 1s;
+  }
+
+  .nav1 ul {
+    flex-direction: column;
+  }
+  .close {
+    display: inline;
+    height: 1rem;
+    width: 1rem;
+    margin: 1rem 2rem;
   }
 }
