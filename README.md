@@ -1,5 +1,7 @@
 # Frontend Mentor - E-commerce product page
 
+[click here to see]( https://meltem-fs.github.io/shopping-page/)
+
 ![Design preview for the E-commerce product page coding challenge](./design/desktop-preview.jpg)
 
 ## Welcome! 👋
