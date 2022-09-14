@@ -12,35 +12,55 @@
     />
     <link rel="stylesheet" href="style.css" />
     <title>Sneakers</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    />
   </head>
   <body>
     <div class="container">
       <header>
         <nav>
-          
           <div class="nav1">
-            <img class="hamb" src="./images/icon-menu.svg" alt="">
+            <img class="hamb" src="./images/icon-menu.svg" alt="" />
             <h1>sneakers</h1>
             <ul class="ul">
-              <img class="close" src="./images/icon-close.svg" alt="">
+              <img class="close" src="./images/icon-close.svg" alt="" />
               <li><a href="">Collections</a></li>
               <li><a href="">Men</a></li>
               <li><a href="">Women</a></li>
               <li><a href="">About</a></li>
               <li><a href="">Contact</a></li>
-            
             </ul>
           </div>
           <div class="nav2">
-            <a href=""><img src="./images/icon-cart.svg" alt="" /></a>
-            <a href=""
-              ><img
+            <a class="cart" href=""
+              ><img src="./images/icon-cart.svg" alt="" /><span class="sup"
+                >3</span
+              ></a
+            >
+            <a href="">
+              <div class="box">
+                <h6>Cart</h6>
+                <hr />
+                <div class="cash">
+                  <img class="ilk" src="./images/image-product-1.jpg" alt="" />
+                  <p>
+                    Fall Limited Edition Sneakers <br />
+                    $125.00 x <span class="sayi"></span>
+                    <span class="sonuc"></span>
+                  </p>
+                  <img class="sil" src="./images/icon-delete.svg" alt="" />
+                </div>
+              </div>
+
+              <img
                 class="user"
                 style="height: 2.8rem"
                 src="./images/image-avatar.png"
                 alt=""
-            /></a>
+              />
+            </a>
           </div>
         </nav>
       </header>
@@ -77,17 +97,17 @@
           <p><del> $250.00</del></p>
           <div class="pay">
             <div class="leftside">
-              <img src="./images/icon-minus.svg" alt="" />
-              <span>3</span>
-              <img src="./images/icon-plus.svg" alt="" />
+              <img class="lower" src="./images/icon-minus.svg" alt="" />
+              <span class="adet">1</span>
+              <img class="higher" src="./images/icon-plus.svg" alt="" />
             </div>
-            <button>
-               <i class="fa-solid fa-cart-shopping"></i> Add to
-              cart
+            <button id="ekle">
+              <i class="fa-solid fa-cart-shopping"></i> Add to cart
             </button>
           </div>
         </section>
       </main>
     </div>
+    <script src="./app.js"></script>
   </body>
 </html>

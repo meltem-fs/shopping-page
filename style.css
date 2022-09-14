@@ -5,6 +5,53 @@
   /* border:1px solid black; */
   font-family: Kumbh Sans, sans-serif;
 }
+.cart{
+  position: relative;
+}
+
+.box{
+  border-radius: 10px;
+  position: absolute;
+  padding: 2rem;
+  font-size: 1.4rem;
+  color: black;
+  right: 14rem;
+  top: 5rem;
+  z-index: 2;
+  background-color: white;
+  box-shadow: 2px 2px 2px 2px rgb(174, 173, 173);
+  
+}
+.box h6{
+  margin-bottom: 1rem;
+}
+.cash{
+  gap: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 1rem;
+  margin: 1rem;
+
+}
+.cash .ilk{
+ height: 4rem;
+  
+}
+.cash p{
+ line-height: 2rem;
+}
+
+.sup{
+  position: absolute;
+  background-color: #fda25c;
+  border-radius: 50px;
+  font-size: medium;
+  padding: 0.03rem 0.3rem;
+  right: -11px;
+  top: -8px;
+  z-index: 1;
+}
 
 .container {
   width: 80vw;
@@ -246,14 +293,15 @@ main {
   .nav1 ul li a {
     padding: 0 0;
   }
-  .hamb:hover ~ .ul {
+  .hamb ~ .ul{
+   transition: all 2s;
+  }
+  .hambclick ~ .ul {
     background-color: rgb(247, 235, 226);
     border-radius: 20px;
     position: absolute;
     left: -2.5rem;
-    
-
-    transition: all 3s;
+    transition: all 2s;
   }
 
   .nav1 ul {
